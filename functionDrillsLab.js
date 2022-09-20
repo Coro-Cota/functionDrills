@@ -363,10 +363,14 @@ console.log(emailCheck("    somtheing@gmail.com"))
 */
 
 //CODE HERE
-let wallet = 50
+
 function chocofrogs(wallet){
-  
+  let frogs = 3
+  return wallet / frogs
 }
+let totalFrogs = chocofrogs(50)
+
+console.log(totalFrogs)
 
 
 ////////////////// PROBLEM 20 ////////////////////
@@ -376,6 +380,13 @@ function chocofrogs(wallet){
 
 //CODE HERE
 
+function chocofrogs(wallet){
+  let frogs = 3
+  return wallet / frogs
+}
+let totalFrogs2 = Math.floor(chocofrogs(50))
+
+console.log(totalFrogs2)
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
@@ -385,6 +396,13 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 
 //CODE HERE
 
+function ascendingArr(array){
+  return array.every(function (x, i) {
+    return i === 0 || x >= array[i - 1];
+  });
+}
+let arrayIsAscending = ascendingArr(sampleArray2)
+console.log(arrayIsAscending)
 
 ////////////////// PROBLEM 22 ////////////////////
 
